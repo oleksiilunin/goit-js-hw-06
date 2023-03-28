@@ -7,7 +7,7 @@ function onSubmitCheckForm(evt) {
 	
 	const { email, password } = evt.currentTarget.elements;
 
-	if (!(email.value || password.value)) {
+	if (!email.value || !password.value) {
 		alert('All fields must be filled');
 		return; 
 	} else {
